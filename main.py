@@ -116,7 +116,7 @@ class MyApp(MDApp):
         name = self.root.ids.text_field.text
 
         if name == '':
-            name == '282 65'
+            name = '282 65'
             self.root.ids.label.text = f'Всего - 128\nРядов - 8\nВ ряду - 16'
         
         else:

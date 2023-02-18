@@ -188,3 +188,9 @@ poetry.toml
 # Ignore all local history of files
 .history
 .ionide
+
+.buildozer/
+*.swo
+*.swp
+bin/
+test.py

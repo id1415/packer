@@ -10,7 +10,7 @@ KV = '''
 MDFloatLayout:
     MDTextField:
         id: text_field
-        hint_text: '282 65'
+        hint_text: ''
         pos_hint: {'center_x': 0.5, 'center_y': 0.9}
         font_size: 30
         mode: 'round'
@@ -19,7 +19,7 @@ MDFloatLayout:
         on_text_validate: app.show()
 
     MDIconButton:
-        icon: 'chevron-right-circle-outline'
+        icon: 'check-circle-outline'
         icon_size: "56sp"
         pos_hint: {'center_x': 0.9, 'center_y': 0.9}
         on_release: app.show()
@@ -114,11 +114,8 @@ class MyApp(MDApp):
 
     def show(self):
         name = self.root.ids.text_field.text
-
         if name == '':
-            name = '282 65'
-            self.root.ids.label.text = f'Всего - 128\nРядов - 8\nВ ряду - 16'
-        
+            self.root.ids.label.text = f'Ошибка!\nВведена пустая строка.'
         else:
             if self.pr:
                 name += ' pr'

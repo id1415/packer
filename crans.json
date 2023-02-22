@@ -58,6 +58,10 @@
     "183 250 forteca reductor": [4, 4],
     "183 300 forteca reductor": [2, 2],
 
+    "183 65 forteca pn25": [48, 24],
+    "183 80 forteca pn25": [48, 24],
+    "183 100 forteca pn25": [40, 20],
+    "183 125 forteca pn25": [15, 15],
     "183 150 forteca pn25": [12, 12],
     "183 200 forteca pn25": [1, 1, "+"],
     "183 250 forteca pn25": [1, 1, "+"],

@@ -194,3 +194,4 @@ poetry.toml
 *.swp
 bin/
 test.py
+history.txt

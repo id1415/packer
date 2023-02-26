@@ -6,78 +6,6 @@ with open('crans.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 
-KV = '''
-MDFloatLayout:
-    MDTextField:
-        id: text_field
-        hint_text: ''
-        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
-        font_size: 30
-        mode: 'round'
-        size_hint_x: None
-        width: 150
-        on_text_validate: app.show()
-
-    MDIconButton:
-        icon: 'check-circle-outline'
-        icon_size: "56sp"
-        pos_hint: {'center_x': 0.9, 'center_y': 0.9}
-        on_release: app.show()
-
-    MDLabel:
-        id: label
-        text: ""
-        pos_hint: {'center_x': .6, 'center_y': 0.30}
-        font_size: 30
-    
-    CheckBox:
-        pos_hint: {'center_x': .9, 'center_y': .75}
-        size_hint: (None, None)
-        size: (48, 48)
-        group: 'type'
-        on_active: app.pr_gross()
-        color: 'black'
-    MDLabel:
-        text: "PR/Gross"
-        pos_hint: {'center_x': .6, 'center_y': .75}
-        font_size: 30
-
-    CheckBox:
-        pos_hint: {'center_x': .9, 'center_y': .65}
-        size_hint: (None, None)
-        size: (48, 48)
-        group: 'type'
-        on_active: app.fort()
-        color: 'black'
-    MDLabel:
-        text: "Forteca"
-        pos_hint: {'center_x': .6, 'center_y': .65}
-        font_size: 30
-    
-    CheckBox:
-        pos_hint: {'center_x': .9, 'center_y': .55}
-        size_hint: (None, None)
-        size: (48, 48)
-        on_active: app.reduc()
-        color: 'black'
-    MDLabel:
-        text: "С редуктором"
-        pos_hint: {'center_x': .6, 'center_y': .55}
-        font_size: 30
-
-    CheckBox:
-        pos_hint: {'center_x': .9, 'center_y': .45}
-        size_hint: (None, None)
-        size: (48, 48)
-        on_active: app.pn()
-        color: 'black'
-    MDLabel:
-        text: "25 давление"
-        pos_hint: {'center_x': .6, 'center_y': .45}
-        font_size: 30
-'''
-
-
 class MyApp(MDApp):
     reductor = False
     pr = False
@@ -85,7 +13,7 @@ class MyApp(MDApp):
     pn25 = False
 
     def build(self):
-        return Builder.load_string(KV)
+        return Builder.load_file('kv.kv')
 
 
     def fort(self):

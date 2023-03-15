@@ -255,6 +255,18 @@
     "293 250 temper": [6, 6],
     "293 250 temper reductor": [6, 6],
 
+    "294 65 temper": [48, 24],
+    "294 80 temper": [40, 20],
+    "294 100 temper": [30, 15],
+    "294 125 temper": [24, 12],
+    "294 125 temper reductor": [24, 12],
+    "294 150 temper": [16, 8],
+    "294 150 temper reductor": [16, 8],
+    "294 200 temper": [12, 6],
+    "294 200 temper reductor": [12, 6],
+    "294 250 temper": [6, 6],
+    "294 250 temper reductor": [6, 6],
+
     "284 65 temper": [48, 24],
     "284 80 temper": [40, 20],
     "284 100 temper": [30, 15],

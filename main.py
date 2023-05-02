@@ -1,6 +1,9 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
 import json
+# from kivy.core.window import Window
+
+# Window.size = (720, 1440)
 
 with open('crans.json', 'r', encoding='utf-8') as file:
     data = json.load(file)

@@ -203,7 +203,7 @@
     "282 500 temper reductor": [1, 1],
 
     "292 15 temper": [720, 48],
-    "292 20 temper": [420, 42],
+    "292 20 temper": [672, 42],
     "292 25 temper": [390, 30],
     "292 32 temper": [240, 20], 
     "292 40 temper": [200, 20],
@@ -274,8 +274,8 @@
     "294 125 temper reductor": [24, 12],
     "294 150 temper": [16, 8],
     "294 150 temper reductor": [16, 8],
-    "294 200 temper": [12, 6],
-    "294 200 temper reductor": [12, 6],
+    "294 200 temper": [6, 6],
+    "294 200 temper reductor": [6, 6],
     "294 250 temper": [6, 6],
     "294 250 temper reductor": [6, 6],
 
@@ -298,6 +298,8 @@
     "286 100 temper": [45, 15],
     "286 125 temper": [24, 12],
     "286 150 temper": [24, 12],
+
+    "286 125 temper reductor": [16, 8],
 
     "296 40 temper": [140, 35],
     "296 50 temper": [120, 30],
